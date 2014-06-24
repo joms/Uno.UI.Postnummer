@@ -12,6 +12,13 @@ public partial class Scene1
 
 	string DefaultText = "SØKETEKST";
 
+	void InputBox_KeyDown(object a1, Uno.Scenes.KeyDownArgs a2)
+    {
+		if (a2.Key == Uno.Platform.Key.Enter)
+		{
+			d.Search(InputBox.Text, Callback);
+		}
+    }
 	void SearchButton_Click(object a1, Uno.UI.ClickEventArgs a2)
     {
 		d.Search(InputBox.Text, Callback);
