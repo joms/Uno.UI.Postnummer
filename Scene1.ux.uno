@@ -12,6 +12,11 @@ public partial class Scene1
 
 	string DefaultText = "SØKETEKST";
 
+	public Scene1()
+    {
+        InitializeUX();
+    }
+
 	void InputBox_KeyDown(object a1, Uno.Scenes.KeyDownArgs a2)
     {
 		if (a2.Key == Uno.Platform.Key.Enter)
@@ -19,11 +24,12 @@ public partial class Scene1
 			d.Search(InputBox.Text, Callback);
 		}
     }
+
 	void SearchButton_Click(object a1, Uno.UI.ClickEventArgs a2)
     {
 		d.Search(InputBox.Text, Callback);
-		
-		ResultPanel.Visibility = Visibility.Collapsed;
+
+		//ResultPanel.Visibility = Visibility.Collapsed;
 		//LoadingElement1.Visibility = Visibility.Visible;
     }
 
@@ -48,9 +54,9 @@ public partial class Scene1
 
 	private void Callback(string content)
 	{
-		ResultPanel.Visibility = Visibility.Visible;
+		//ResultPanel.Visibility = Visibility.Visible;
 		//LoadingElement1.Visibility = Visibility.Collapsed;
-		
+
 		var jsonData = JsonReader.Parse(content);
 
 		var json = jsonData["hits"]["hits"][0]["_source"];
@@ -70,9 +76,4 @@ public partial class Scene1
 
 		ZipResult.Text = zip;
 	}
-
-    public Scene1()
-    {
-        InitializeUX();
-    }
 }
