@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Project>
+  <References>
+    <PackageReference Name="Experimental.Data" Version="0.1.0.0" />
+    <PackageReference Name="Experimental.Net.Http" Version="0.1.0.0" />
+    <PackageReference Name="Uno.Animations" />
+    <PackageReference Name="Uno.Content.Utilities" />
+    <PackageReference Name="Uno.Designer" />
+    <PackageReference Name="Uno.Drawing" Version="0.1.0.0" />
+    <PackageReference Name="Uno.Scenes" />
+    <PackageReference Name="Uno.UI" />
+  </References>
+  <Files>
+    <UxFile Path="Scene1.ux" />
+    <SourceFile Path="Data.uno" />
+    <SourceFile Path="Scene1.ux.uno" />
+    <StartupFile Path="Scene1.ux" />
+  </Files>
+</Project>

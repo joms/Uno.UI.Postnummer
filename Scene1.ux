@@ -1,0 +1,24 @@
+<Scene xmlns:ux="http://schemas.outracks.com/ux" ux:ClassName="Scene1" xmlns="Uno.Scenes, Uno.UI, Uno.Drawing, Uno">
+  <Entity ux:Binding="Camera" ux:Name="Entity">
+    <Transform Position="100, 100, 100" RotationDegrees="65.79759, 98.72349, 98.09975" />
+    <Frustum FovDegrees="45" Aspect="2.4" ZNear="10" ZFar="5000" />
+  </Entity>
+  <DockPanel VerticalAlignment="Stretch" ux:Name="DockPanel">
+    <DockPanel HorizontalAlignment="Stretch" VerticalAlignment="Top" Padding="5, 25, 5, 5" DockPanel.Dock="Top" ux:Name="DockPanel1">
+      <Button Text="SØK" DockPanel.Dock="Right" Click="SearchButton_Click" ux:Name="SearchButton" />
+      <TextBox Text="SØKETEKST" VerticalAlignment="Stretch" TextColor="0.8, 0.8, 0.8, 1" GotFocus="InputBox_GotFocus" LostFocus="InputBox_LostFocus" ux:Name="InputBox" />
+    </DockPanel>
+    <DockPanel Margin="10, 0, 10, 6" ux:Name="DockPanel2">
+      <StackPanel VerticalAlignment="Center" ux:Name="StackPanel1">
+        <TextBlock Text=" " HorizontalAlignment="Center" VerticalAlignment="Center" Margin="5, 5, 5, 5" TextColor="0.8, 0.8, 0.8, 1" FontSize="100" ux:Name="PlaceResult" />
+        <TextBlock Text=" " HorizontalAlignment="Center" VerticalAlignment="Center" Margin="5, 5, 5, 5" TextColor="0.8, 0.8, 0.8, 1" FontSize="50" ux:Name="ZipResult" />
+      </StackPanel>
+      <Rectangle ux:Binding="Appearance" ux:AutoBind="false" CornerRadius="2" ux:Name="Rectangle1">
+        <SolidColor Color="0, 0.2862745, 0.3921569, 1" ux:Name="SolidColor1" />
+      </Rectangle>
+    </DockPanel>
+    <Rectangle ux:Binding="Appearance" ux:AutoBind="false" ux:Name="Rectangle2">
+      <SolidColor Color="0.772549, 0.772549, 0.772549, 1" ux:Name="SolidColor2" />
+    </Rectangle>
+  </DockPanel>
+</Scene>
