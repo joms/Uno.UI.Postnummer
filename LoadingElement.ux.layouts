@@ -1,0 +1,7 @@
+<Layouts>
+  <Node RefId="this" PanX="100" PanY="100">
+    <Node RefId="Image1" X="134" Y="-37" />
+    <Node RefId="Image11" X="138" Y="-10.5" />
+    <Node RefId="Image111" X="140" Y="17.5" />
+  </Node>
+</Layouts>

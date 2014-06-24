@@ -1,0 +1,20 @@
+<Layouts>
+  <Node RefId="this" PanX="107" PanY="82" RootX="-11" RootY="3">
+    <Node RefId="Entity" X="169" Y="50" />
+    <Node RefId="Image1" X="497" Y="-13" />
+    <Node RefId="StackPanel1" X="284" Y="-3.5" />
+    <Node RefId="Image11" X="509" Y="14.5" />
+    <Node RefId="Image111" X="528" Y="40.5" />
+    <Node RefId="Animation1" X="115" Y="-35">
+      <Node RefId="FloatTrack">
+        <Node RefId="FloatKeyframe" />
+      </Node>
+      <Node RefId="FloatTrack1">
+        <Node RefId="FloatKeyframe1" />
+      </Node>
+      <Node RefId="FloatTrack2">
+        <Node RefId="FloatKeyframe2" />
+      </Node>
+    </Node>
+  </Node>
+</Layouts>

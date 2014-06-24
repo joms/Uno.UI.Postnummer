@@ -1,0 +1,28 @@
+<StackPanel xmlns:ux="http://schemas.outracks.com/ux" xmlns:ua="Uno.Animations" ux:ClassName="LoadingElement" Orientation="Horizontal" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Visibility="Visible" Margin="0, 0, 0, 0" Padding="0, 0, 0, 0" xmlns="Uno.Scenes, Uno.UI, Uno.Drawing, Uno">
+  <Image X="385" Y="195" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="4, 0, 5, 0" ux:Name="Image1">
+    <texture2D ux:Binding="Texture" ux:Name="texture2D1" ux:Path="Assets/Circle.png" />
+  </Image>
+  <Image X="385" Y="195" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0, 0, 5, 0" Grid.Row="0" Grid.Column="0" ux:Name="Image11">
+    <texture2D ux:Binding="Texture" ux:Name="texture2D11" ux:Path="Assets/Circle.png" />
+  </Image>
+  <Image X="385" Y="195" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Column="0" ux:Name="Image111">
+    <texture2D ux:Binding="Texture" ux:Name="texture2D111" ux:Path="Assets/Circle.png" />
+  </Image>
+  <ua:Animation ux:AutoBind="false" Length="2" Loop="true" PlayOnStartup="true" ux:Name="Loading" ux:IsRecordEnabled="False">
+    <ua:FloatTrack Target="Image1.Opacity" ux:Name="FloatTrack">
+      <ua:FloatKeyframe LeftValue="0" Value="0" Easing="Linear" Time="0" ux:Name="FloatKeyframe" />
+      <ua:FloatKeyframe LeftValue="1" Value="1" Easing="Linear" Time="0.5" />
+      <ua:FloatKeyframe LeftValue="0" Value="0" Easing="Linear" Time="1" />
+    </ua:FloatTrack>
+    <ua:FloatTrack Target="Image11.Opacity" ux:Name="FloatTrack1">
+      <ua:FloatKeyframe LeftValue="0" Value="0" Easing="Linear" Time="0.5" ux:Name="FloatKeyframe1" />
+      <ua:FloatKeyframe LeftValue="1" Value="1" Easing="Linear" Time="1" />
+      <ua:FloatKeyframe LeftValue="0" Value="0" Easing="Linear" Time="1.5" />
+    </ua:FloatTrack>
+    <ua:FloatTrack Target="Image111.Opacity" ux:Name="FloatTrack2">
+      <ua:FloatKeyframe LeftValue="0" Value="0" Easing="Linear" Time="1" ux:Name="FloatKeyframe2" />
+      <ua:FloatKeyframe LeftValue="1" Value="1" Easing="Linear" Time="1.5" />
+      <ua:FloatKeyframe LeftValue="0" Value="0" Easing="Linear" Time="2" />
+    </ua:FloatTrack>
+  </ua:Animation>
+</StackPanel>

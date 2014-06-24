@@ -4,17 +4,23 @@
       <FillViewport />
     </Window>
   </ViewportLayout>
-  <Node RefId="this" PanX="-265" PanY="49.5" RootX="-34" RootY="-42" Default="this.Children">
+  <ViewportLayout Name="CustomLayout2">
+    <Window>
+      <FillViewport />
+    </Window>
+  </ViewportLayout>
+  <Node RefId="this" PanX="-196" PanY="78.5" RootX="-34" RootY="-42" Default="Panel1.Children">
     <Node RefId="Entity" X="150" PanX="100" PanY="100" />
-    <Node RefId="InputBox" X="775" Y="-52" />
-    <Node RefId="PlaceResult" X="898" Y="14" PanX="100" PanY="100" />
-    <Node RefId="SearchButton" X="773" Y="-27" />
-    <Node RefId="DockPanel1" X="615" Y="-15" />
-    <Node RefId="DockPanel" X="485" Y="27" />
-    <Node RefId="DockPanel2" X="634" Y="40" PanX="100" PanY="100" />
-    <Node RefId="Rectangle1" X="773" Y="76" />
-    <Node RefId="Rectangle2" X="630" Y="78" />
-    <Node RefId="ZipResult" X="907" Y="47" />
-    <Node RefId="StackPanel1" X="776" Y="27" />
+    <Node RefId="InputBox" X="525" Y="-119" />
+    <Node RefId="PlaceResult" X="1036" Y="-98" PanX="100" PanY="100" />
+    <Node RefId="SearchButton" X="523" Y="-94" />
+    <Node RefId="DockPanel1" X="365" Y="-82" />
+    <Node RefId="DockPanel" X="235" Y="-40" />
+    <Node RefId="DockPanel2" X="539" Y="-13" PanX="126" PanY="77" />
+    <Node RefId="Rectangle1" X="678" Y="23" PanX="100" PanY="100" />
+    <Node RefId="Rectangle2" X="380" Y="11" />
+    <Node RefId="ZipResult" X="1037" Y="-66" />
+    <Node RefId="ResultPanel" X="907" Y="-82" />
+    <Node RefId="Panel1" X="708" Y="-55" />
   </Node>
 </Layouts>

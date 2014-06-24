@@ -1,6 +1,6 @@
 <Scene xmlns:ux="http://schemas.outracks.com/ux" ux:ClassName="Scene1" xmlns="Uno.Scenes, Uno.UI, Uno.Drawing, Uno">
   <Entity ux:Binding="Camera" ux:Name="Entity">
-    <Transform Position="100, 100, 100" RotationDegrees="65.79759, 98.72349, 98.09975" />
+    <Transform Position="100, 100, 100" RotationDegrees="68.65945, 177.9707, 177.9636" />
     <Frustum FovDegrees="45" Aspect="2.4" ZNear="10" ZFar="5000" />
   </Entity>
   <DockPanel VerticalAlignment="Stretch" ux:Name="DockPanel">
@@ -8,13 +8,17 @@
       <Button Text="SØK" DockPanel.Dock="Right" Click="SearchButton_Click" ux:Name="SearchButton" />
       <TextBox Text="SØKETEKST" VerticalAlignment="Stretch" TextColor="0.8, 0.8, 0.8, 1" GotFocus="InputBox_GotFocus" LostFocus="InputBox_LostFocus" ux:Name="InputBox" />
     </DockPanel>
-    <DockPanel Margin="10, 0, 10, 6" ux:Name="DockPanel2">
-      <StackPanel VerticalAlignment="Center" ux:Name="StackPanel1">
-        <TextBlock Text=" " HorizontalAlignment="Center" VerticalAlignment="Center" Margin="5, 5, 5, 5" TextColor="0.8, 0.8, 0.8, 1" FontSize="100" ux:Name="PlaceResult" />
-        <TextBlock Text=" " HorizontalAlignment="Center" VerticalAlignment="Center" Margin="5, 5, 5, 5" TextColor="0.8, 0.8, 0.8, 1" FontSize="50" ux:Name="ZipResult" />
-      </StackPanel>
+    <DockPanel Visibility="Visible" Margin="10, 0, 10, 6" ux:Name="DockPanel2">
+      <Panel ux:Name="Panel1">
+        <StackPanel Orientation="Vertical" IsChildrenHitable="true" IsEnabled="true" IsHitable="true" HorizontalAlignment="Center" VerticalAlignment="Center" Visibility="Visible" DockPanel.Dock="Left" ux:Name="ResultPanel">
+          <TextBlock Text="Lesjaskog" IsEnabled="true" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="5, 5, 5, 5" TextColor="0.8, 0.8, 0.8, 1" FontSize="100" ux:Name="PlaceResult" />
+          <TextBlock Text="2668" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="5, 5, 5, 5" TextColor="0.8, 0.8, 0.8, 1" FontSize="50" ux:Name="ZipResult" />
+        </StackPanel>
+      </Panel>
       <Rectangle ux:Binding="Appearance" ux:AutoBind="false" CornerRadius="2" ux:Name="Rectangle1">
         <SolidColor Color="0, 0.2862745, 0.3921569, 1" ux:Name="SolidColor1" />
+        <TextureFill ux:AutoBind="false" ux:Name="TextureFill1" />
+        <LinearGradient ux:AutoBind="false" ux:Name="LinearGradient1" />
       </Rectangle>
     </DockPanel>
     <Rectangle ux:Binding="Appearance" ux:AutoBind="false" ux:Name="Rectangle2">
