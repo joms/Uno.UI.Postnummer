@@ -14,5 +14,5 @@ Upcoming features
 - More intelligent search
 - Improved UI
 - Autocompletion of zipcodes and places
-- Search on enter
+- ~~Search on enter~~
 - Webscale cloudstorage with web-enabled e-services
