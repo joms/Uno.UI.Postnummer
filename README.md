@@ -3,7 +3,7 @@ Uno.UI.Postnummer
 
 A search engine made specifically for mobile platforms, which finds the zipcode connected to a place and visa verca.
 
----
+===
 
 Upcoming features
 
@@ -13,4 +13,5 @@ Upcoming features
 - Better error handling
 - More intelligent search
 - Improved UI
+- Autocompletion of zipcodes and places
 - Webscale cloudstorage with web-enabled e-services
