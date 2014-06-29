@@ -15,6 +15,10 @@ public partial class Scene1
 	public Scene1()
     {
         InitializeUX();
+
+		var gps = new GPS("test");
+		var url = gps.URL();
+		debug_log url;
     }
 
 	void InputBox_KeyDown(object a1, Uno.Scenes.KeyDownArgs a2)

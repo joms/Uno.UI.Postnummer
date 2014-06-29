@@ -1,0 +1,11 @@
+<ExportBindings TargetBackend="JavaScript">
+    <Type Name="GPSImpl">
+        <Method Signature="Create(string):GPSHandle">
+            <Body>
+                var v = $0;
+                return v;
+            </Body>
+        </Method>
+        <Method Signature="GetURL(GPSHandle):string"><Expression>$0.toString()</Expression></Method>
+    </Type>
+</ExportBindings>

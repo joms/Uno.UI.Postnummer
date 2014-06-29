@@ -14,8 +14,10 @@
     <UxFile Path="LoadingElement.ux" />
     <UxFile Path="Scene1.ux" />
     <SourceFile Path="Data.uno" />
+    <SourceFile Path="GPS.uno" />
     <SourceFile Path="LoadingElement.ux.uno" />
     <SourceFile Path="Scene1.ux.uno" />
+    <ExtensionFile Path="GPS.uxl" />
     <ExtraFile Path="Assets/Circle.png" />
     <StartupFile Path="Scene1.ux" />
   </Files>
